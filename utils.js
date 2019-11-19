@@ -19,4 +19,21 @@ function multiplyMatrices(mat1, mat2) {
 }
 
 
+function printMatrix(matrix) {
+	let output = "";
+	for (let row = 0; row < matrix.length; row++) {
+		for (let col = 0; col < mat[row].length; col++) {
+			output += mat[row][col] + "\t";
+		}
+		output += "\n";
+	}
 
+	console.log(output);
+}
+
+
+
+module.exports = {
+    multiplyMatrices,
+	printMatrix
+}
