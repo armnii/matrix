@@ -20,7 +20,12 @@ function multiplyMatrices(mat1, mat2) {
 
 
 function printMatrix(matrix) {
-	let output = "";
+    
+    if (matrix == null || matrix == undefined) {
+        return
+    }
+    
+    let output = "";
 	for (let row = 0; row < matrix.length; row++) {
 		for (let col = 0; col < mat[row].length; col++) {
 			output += mat[row][col] + "\t";
