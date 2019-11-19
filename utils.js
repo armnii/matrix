@@ -27,8 +27,8 @@ function printMatrix(matrix) {
     
     let output = "";
 	for (let row = 0; row < matrix.length; row++) {
-		for (let col = 0; col < mat[row].length; col++) {
-			output += mat[row][col] + "\t";
+		for (let col = 0; col < matrix[row].length; col++) {
+			output += matrix[row][col] + "\t";
 		}
 		output += "\n";
 	}
